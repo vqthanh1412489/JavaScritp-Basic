@@ -1,6 +1,6 @@
 const a = [1 , 5, 44, 12, 3];
 
-function locSoChan(arr){
+function filterPear(arr){
     const b = [];
     for (let item in arr){
         if (arr[item] % 2 === 0)
@@ -9,4 +9,15 @@ function locSoChan(arr){
     return b;
 }
 
-console.log(locSoChan(a));
+function filterFoot(arr){
+    const b = [];
+    for (let item in arr){
+        if (arr[item] % 2 === 1)
+            b.push(arr[item]);
+    }
+    return b;
+}
+
+
+console.log(filterPear(a));
+console.log(filterFoot(a));
