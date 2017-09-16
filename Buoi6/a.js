@@ -30,6 +30,7 @@ function getSqr(arr){
     return b;
 }
 
+// Hàm map tự viết
 function map(arr, fn){
     const b = [];
     for (let index in arr){
