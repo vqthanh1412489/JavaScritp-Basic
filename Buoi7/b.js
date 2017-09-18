@@ -1,7 +1,7 @@
 const a = 'Hello World 123';
 
 String.prototype.replaceAll = function(a, b){
-    let self = this; // Đối tượng string đang đề cập đếp
+    let self = this; // Đối tượng string đang đề cập đến
     while(self.includes(a)){
         self = self.replace(a,b);
     }
