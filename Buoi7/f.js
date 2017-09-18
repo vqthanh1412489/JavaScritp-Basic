@@ -1,3 +1,5 @@
+// Chặn nhập vào dữ liệu sai logic
+
 class Person {
     constructor(name, age, height){
         this.name = name;
