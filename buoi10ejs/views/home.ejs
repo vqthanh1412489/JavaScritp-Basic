@@ -1,0 +1,39 @@
+
+<% const a = true %>
+<% const arr = ['NodeJS', 'Angular', 'Java'] %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        h1 {
+            color: #5515CC;
+            font-size: 15px;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vu Thanh Thanh 1</h1>
+    <img src="../images/cat.png" alt="Con meo">
+
+    <% if (a){ %>
+        <p>May 1</p>
+    <% }else { %>
+        <p>May 2</p>
+    <% } %>
+
+    <% arr.forEach(e => { %>
+        <h3><%= e %></h3>
+    <% }); %>
+</body>
+
+<script src="reload/reload.js"></script>
+</html>

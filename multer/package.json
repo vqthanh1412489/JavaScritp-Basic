@@ -1,0 +1,15 @@
+{
+  "name": "multer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.0",
+    "multer": "^1.3.0",
+    "reload": "^2.2.2"
+  },
+  "scripts": {
+    "start": "nodemon index.js -e js,ejs"
+  }
+}
