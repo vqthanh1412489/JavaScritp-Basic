@@ -45,4 +45,6 @@ Buổi 12:
                   { name: 'avatar', maxCount: 1 },
                   { name: 'gallery', maxCount: 8 } // maxCount:  Giới hạn số lượng file truyền lên với name tương ứng lên server từ trang đó là 5.
                 ]
-           
+     - Không cho Upload file mà chỉ nhận thông tin từ các trường nhập liệu bên form (text, password, textarea...)
+        - upload.none()
+        - upload.fields([])
