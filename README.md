@@ -2,6 +2,7 @@
 Learning Javascript
 
 Buổi 10:
+
     - Module reload
     - Yarn <=> npm
     - Nodemon
@@ -11,6 +12,7 @@ Buổi 10:
     - (--dev) : Module chỉ trong quá trình phát triển
     
 Buổi 11:
+
     - Cách truyền biến app.locals.name = 'Thanh'.
     - Include dữ liệu giữa các trang html hoặc từ .js => html dùng ejs
     - Cách bắt lỗi server:
@@ -27,7 +29,8 @@ Buổi 11:
     - Midleware
 
 Buổi 12:
+
     - Cách tải lên 1 file từ Client lên Server
         + Sử dung module multer (của Express)
-            * dest: chỉ có thể lựa chọn nơi lưu
-            * storage: lựa chọn nơi lưu, quy định đặt tên file trên server.
+            - dest: chỉ có thể lựa chọn nơi lưu
+            - storage: lựa chọn nơi lưu, quy định đặt tên file trên server.
