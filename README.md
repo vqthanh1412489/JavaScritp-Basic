@@ -48,3 +48,6 @@ Buổi 12:
      - Không cho Upload file mà chỉ nhận thông tin từ các trường nhập liệu bên form (text, password, textarea...)
         - upload.none()
         - upload.fields([])
+     - Upload file dung lượng lớn:
+            var storage = multer.memoryStorage()
+            var upload = multer({ storage: storage })
