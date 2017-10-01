@@ -51,3 +51,4 @@ Buổi 12:
      - Upload file dung lượng lớn:
             var storage = multer.memoryStorage()
             var upload = multer({ storage: storage })
+            + Note: Nó không lưu file vào server mà chỉ lưu buffer của file.
