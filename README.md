@@ -30,7 +30,19 @@ Buổi 11:
 
 Buổi 12:
 
-    - Cách tải lên 1 file từ Client lên Server
+    - Cách tải lên file từ Client lên Server
         + Sử dung module multer (của Express)
             - dest: chỉ có thể lựa chọn nơi lưu
             - storage: lựa chọn nơi lưu, quy định đặt tên file trên server.
+    - Upload một lúc nhiều file cùng name:
+        - upload.array('avatar', 5) :
+            + avatar : name bên form truyền lên
+            + 5: Giới hạn số lượng file truyền lên server từ trang đó là 5.
+    - Upload một lúc nhiều file khác name (Sử dụng trong trường hợp page cần nhiều trường tải lên như: avatar, product, pannel...):
+        - upload.fields(fields): trong đó fields (Trong ngoặc) là một array quy định name sẽ nhận từ form. 
+            + VD: fields:
+                [
+                  { name: 'avatar', maxCount: 1 },
+                  { name: 'gallery', maxCount: 8 } // maxCount:  Giới hạn số lượng file truyền lên với name tương ứng lên server từ trang đó là 5.
+                ]
+           
